@@ -33,7 +33,7 @@ function handleMove(index) {
   if (winnerInfo) {
     gameOver = true;
     highlightWinningCells(winnerInfo.indices);
-    messagettt.textContent = Player ${winnerInfo.player} wins!;
+    messagettt.textContent = `Player ${winnerInfo.player} wins!`;
     return;
   }
 
@@ -44,7 +44,7 @@ function handleMove(index) {
   }
 
   currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-  messagettt.textContent = Player ${currentPlayer}'s turn;
+  messagettt.textContent = `Player ${currentPlayer}'s turn`;
 }
 
 function winner() {
